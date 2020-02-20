@@ -1,0 +1,35 @@
+heroku deployment steps
+
+navigate to root directory
+
+git remote -v
+    this will show the current origin link to github repo
+
+ensure you are in root directory of your heroku app
+
+/Users/ngeorge/Documents/Lambda/Sprint_3/Unit_3/inclass-twittoff
+    this is the location of my app
+
+heroku create inclass-twittoff
+    this created the repo on heroku
+
+git remote -v
+    passing this command in again will show the association now between your heroku app and github
+    for example:
+
+    heroku	https://git.heroku.com/inclass-twittoff.git (fetch)
+    heroku	https://git.heroku.com/inclass-twittoff.git (push)
+    origin	https://github.com/npgeorge/inclass-twittoff.git (fetch)
+    origin	https://github.com/npgeorge/inclass-twittoff.git (push)   
+
+
+git push heroku master
+    this will push your current origin github files to heroku
+
+
+heroku logs --tail
+    outputs logs for debugging
+
+
+
+
