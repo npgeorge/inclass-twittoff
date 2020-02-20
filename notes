@@ -1,0 +1,10 @@
+-- html page -- 
+invokes the routes page
+ties in routed codes to specified locations on html page
+
+-- running from terminal --
+pulls requests from basillica to add to your database
+uses twitter api tweepy to call and invoke users data
+using db commands to pull in these call to the databases
+
+-- adding in statistical commands -- 
