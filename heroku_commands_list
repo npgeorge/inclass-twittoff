@@ -71,3 +71,10 @@ FLASK_APP=twittoff flask db upgrade
 heroku run bash
     check that this is working
 
+
+on heroku dashboard heroku job scheduler
+    can schedule scripts to run at certain time intervals - awesome
+    you can run any python script as long as you have a pip file and schedule scripts to run at any hour of any day
+
+
+
