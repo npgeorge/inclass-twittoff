@@ -30,6 +30,44 @@ git push heroku master
 heroku logs --tail
     outputs logs for debugging
 
+create a Procfile, a heroku specific file we need to have in our repo
+
+heroku run bash
+    logs into the server
+
+    server commands:
+    whoami
+        returns your user id (i think)
+    ls -al
+        returns a list of files on the server
 
 
+configure some environment variables
+
+    heroku config:set BASILICA_API_KEY="_____"
+    heroku config:set TWITTER_API_KEY="_____"
+    heroku config:set TWITTER_API_SECRET="______"
+    heroku config:set TWITTER_ACCESS_TOKEN="______"
+    heroku config:set TWITTER_ACCESS_TOKEN_SECRET="_____"
+
+heroku config
+    shows all of our environment variables, make sure they are set correctly
+
+
+heroku addons:create heroku-postgresql:hobby-dev
+    provision a new pg database (free tier) from command-line
+
+(we connected this new database to tableplus)
+
+heroku run bash
+    check that this is working
+
+then..
+Need to migrate db after provisioning. However you're migrating your local db.
+FLASK_APP=twittoff flask db init
+FLASK_APP=twittoff flask db migrate
+FLASK_APP=twittoff flask db upgrade 
+
+heroku run bash
+    check that this is working
 

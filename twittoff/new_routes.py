@@ -2,9 +2,9 @@ from flask import Blueprint, jsonify, request, render_template, flash
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 
-from web_app.models import User, Tweet, db
-from web_app.twitter_service import twitter_api_client
-from web_app.basilica_service import basilica_connection
+from twittoff.models import User, Tweet, db
+from twittoff.twitter_service import twitter_api_client
+from twittoff.basilica_service import basilica_connection
 #from web_app.classifier import load_model
 
 new_routes = Blueprint("new_routes", __name__)

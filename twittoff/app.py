@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from web_app.models import db, User, Tweet, migrate
-from web_app.routes import my_routes
-#from web_app.more_routes import more_routes
-from web_app.twitter_service import twitter_api_client
+from twittoff.models import db, User, Tweet, migrate
+from twittoff.routes import my_routes
+#from twittoff.more_routes import more_routes
+from twittoff.twitter_service import twitter_api_client
 
 load_dotenv()
 

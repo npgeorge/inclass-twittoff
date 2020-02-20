@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request, render_template, current_app
 
-from web_app.models import User, Tweet, db
-#from web_app.twitter_service import twitter_api_client
+from twittoff.models import User, Tweet, db
+#from twittoff.twitter_service import twitter_api_client
 
 my_routes = Blueprint("my_routes", __name__)
 
