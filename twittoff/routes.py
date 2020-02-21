@@ -75,6 +75,7 @@ def hello(name=None):
     #return message
     return render_template("hello.html", message=message)
 
+
 @my_routes.route("/get_tweets")
 def get_tweets():
     tweets = []
